@@ -2,11 +2,11 @@
 
 This project contains a set of SQL queries targeting employee and salary data in the **AdventureWorks2022** sample database using **SQL Server**.
 
-## 💾 Database
+##  Database
 - **Database Name**: `AdventureWorks2022`
 - **Schemas Used**: `HumanResources`, `Person`
 
-## 🛠 Requirements
+## Requirements
 - Microsoft SQL Server (2019+ recommended)
 - AdventureWorks2022 sample database installed
 
@@ -47,17 +47,17 @@ FROM HumanResources.Employee;
 
 ### 4. Employees Without a Raise in the Last 2 Years
 
-#### 🔹 Method 1: Subquery for Max RateChangeDate
+####  Method 1: Subquery for Max RateChangeDate
 ```sql
 -- Gets latest rate change per employee using correlated subquery
 ```
 
-#### 🔹 Method 2: CTE + ROW_NUMBER()
+####  Method 2: CTE + ROW_NUMBER()
 ```sql
 -- Uses ROW_NUMBER to filter out only the latest salary per employee
 ```
 
-#### 🔹 Method 3: GROUP BY + MIN/MAX
+####  Method 3: GROUP BY + MIN/MAX
 ```sql
 -- Uses aggregation and a date filter (before 2020-12-31) to identify old salary records
 ```
@@ -94,7 +94,7 @@ CREATE VIEW EmployeeSalaryOverview AS
 
 ### 7. Top 5 Highest Paid Employees per Department
 
-#### ✅ CTE: `RankedEmployees`
+#### CTE: `RankedEmployees`
 ```sql
 -- Uses ROW_NUMBER() to rank employees by salary within each department
 -- Filters top 5 per department
@@ -108,7 +108,7 @@ CREATE VIEW EmployeeSalaryOverview AS
 
 ---
 
-## 📁 Tables Used
+##  Tables Used
 
 | Table Name                                 | Description                          |
 |-------------------------------------------|--------------------------------------|
